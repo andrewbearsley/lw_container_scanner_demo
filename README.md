@@ -1,4 +1,6 @@
 # Lacework Inline Scanner GitHub Actions Container Demo
+
+[![Git](https://app.soluble.cloud/api/v1/public/badges/a37287da-2083-41ae-a513-0ca1fd155279.svg?orgId=578990629266)](https://app.soluble.cloud/repos/details/github.com/andrewbearsley/lw_container_scanner_demo?orgId=578990629266)  
 GitHub Actions demo for Lacework Inline Scanner.
   
 ### About
