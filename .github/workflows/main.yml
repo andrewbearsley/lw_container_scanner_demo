@@ -10,7 +10,6 @@ jobs:
         run: |
             docker pull uzyexe/pacman
       - name: Scan container images for vulnerabitilies using Lacework
-#        uses: timarenz/lw-scanner-action@main
         uses: lacework/lw-scanner-action@v1.4.0
         continue-on-error: false
         with:
