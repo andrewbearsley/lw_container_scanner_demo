@@ -7,9 +7,6 @@ jobs:
     steps:
       - name: Verify LW Account Details
         shell: bash
-        run: echo -e "LW_ACCOUNT_NAME:$(echo ${{secrets.LW_ACCOUNT_NAME}} | sed 's/./& /g')\nLW_ACCESS_TOKEN:$(echo ${{secrets.LW_ACCESS_TOKEN}} | sed 's/./& /g')"
-      - name: Alternate Verify LW Account Details
-        shell: bash
         run: echo -e "LW_ACCOUNT_NAME:$(echo ${{secrets.LW_ACCOUNT_NAME}} | sed 's/^\(...\)\(.*\)\(...\)$/\1****\3/')\nLW_ACCESS_TOKEN:$(echo ${{secrets.LW_ACCESS_TOKEN}} | sed 's/^\(...\)\(.*\)\(...\)$/\1****\3/')"
       - name: Pull Log4J Vul Container
         shell: bash
