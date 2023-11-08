@@ -2,7 +2,7 @@
 GitHub Actions demo for Lacework Inline Scanner.
   
 ### About
-This action pulls a PacMan Container and then Scan's it with the Lacework Inline CVE scanner.  
+This action pulls a PacMan Container and then scans it with the Lacework Inline CVE scanner.  
   
 ### Expected Inputs
 It required two inputs as GitHub Secrets:
