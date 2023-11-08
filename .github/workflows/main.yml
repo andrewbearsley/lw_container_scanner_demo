@@ -5,10 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: GitHub Action for LW Scanner
     steps:
-      - name: Verify LW credentials
+      - name: Verify LW Account
         shell: bash
-        run: echo LW_ACCOUNT_NAME
-        run: echo ${{secrets.LW_ACCOUNT_NAME}} | sed 's/./& /g'
+        run: echo "LW_ACCOUNT_NAME:$(echo ${{secrets.LW_ACCOUNT_NAME}} | sed 's/./& /g')"
       - name: Pull Log4J Vul Container
         shell: bash
         run: |
