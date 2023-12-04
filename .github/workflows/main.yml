@@ -1,7 +1,11 @@
-on: [push]
-
+on:
+  push:
+    branches:
+      - main  # Change 'main' to your default branch name
+  workflow_dispatch:
+  
 jobs:
-  hello_world_job:
+  build:
     runs-on: ubuntu-latest
     name: GitHub Action for LW Scanner
     steps:
