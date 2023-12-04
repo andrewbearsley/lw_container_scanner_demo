@@ -23,7 +23,7 @@ jobs:
           SAVE_RESULTS_IN_LACEWORK: true
           SAVE_BUILD_REPORT: true
           BUILD_REPORT_FILE_NAME: report.html
-          DEBUGGING: true
+          DEBUGGING: false
           RESULTS_IN_GITHUB_SUMMARY: true
 
 ##          FAIL_BUILD: true
